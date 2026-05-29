@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "obase=7; ibase=5; $(echo $WATER | tr 'water' '01234') + ibase=4; $(echo $STIR | tr -d '.' | tr 'stir' '0123')" | bc | tr '0123456' 'bestcho' | tr '[:upper:]' '[:lower:]'
+
