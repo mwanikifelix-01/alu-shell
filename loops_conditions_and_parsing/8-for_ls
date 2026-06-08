@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This script shows a use of for in ls command.
 
-for i in $(ls) ; do
-	echo "$i" | cut -d "-" -f 2-
+for file in * ; do
+	echo "${file#*-}"
 done

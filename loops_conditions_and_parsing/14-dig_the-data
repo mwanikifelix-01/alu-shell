@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script displays thi ips according to number of occurrences
+
+awk '{print $1, $9}' apache-acess.log | sort | uniq -c | sort -rn
