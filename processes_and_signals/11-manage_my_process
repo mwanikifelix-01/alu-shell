@@ -12,8 +12,8 @@ case "$1" in
   	     if [ -f "$fpid" ]; then
 	         pkill -f manage_my_process
 	         rm -f "$fpid"
-	         echo "manage_my_process stopped"
 	     fi
+	         echo "manage_my_process stopped"
              ;;
  	restart)
 	  if [ -f "$fpid" ]; then
@@ -22,7 +22,7 @@ case "$1" in
 	  fi
 	     ./manage_my_process &
 	     echo $! > "$fpid"
-	     echo "manage_my_process has restarted"
+	     echo "manage_my_process restarted"
 	     ;;
  	*)
 	  echo "Usage: manage_my_process {start|stop|restart}"
