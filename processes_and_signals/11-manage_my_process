@@ -13,7 +13,7 @@ case "$1" in
 	         pkill -f manage_my_process
 	         rm -f "$fpid"
 	     fi
-	         echo "manage_my_process stopped"
+	         echo "manage_my_process stoppe"
              ;;
  	restart)
 	  if [ -f "$fpid" ]; then
